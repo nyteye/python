@@ -20,6 +20,8 @@ print("index-",nano,"max or min value", mint,"counter-->",count)
 
 
 
+
+
 ##for the index finding.......................................................................................................................... 
 
 arr = [4, 2, 0, 3, 0, 7, 0, 45, 23, 1, 45, 0]
@@ -38,3 +40,29 @@ print("It occurs at indices:")
 for i in range(size):
     if arr[i] == min_val:
         print(i)  # print index
+
+
+
+
+
+#Code Store Indices Where Maximum Occurs:.................................................................................................................
+
+arr = [4, 2, 0, 3, 0, 7, 0, 45, 23, 1, 45, 0]
+size = len(arr)
+
+# Step 1: Find the maximum value
+maxt = arr[0]
+for i in range(1, size):
+    if arr[i] > maxt:
+        maxt = arr[i]
+
+# Step 2: Store indices where max occurs
+max_indices = []
+
+for i in range(size):
+    if arr[i] == maxt:
+        max_indices.append(i)
+
+# Output
+print("Maximum value:", maxt)
+print("It occurs at indices:", max_indices)
