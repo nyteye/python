@@ -1,2 +1,2 @@
 # python
-Sobre python index
+Sobre python index.  sobre spanish->> "about" in english
